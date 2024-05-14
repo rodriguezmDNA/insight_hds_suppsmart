@@ -17,6 +17,7 @@ POS tags, dependency parse and named entities
 """
 
 ### For stop words
+import nltk
 from wordcloud import STOPWORDS
 from nltk.corpus import stopwords
 
@@ -34,6 +35,8 @@ from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 import pyLDAvis
 import pyLDAvis.gensim 
 import matplotlib.pyplot as plt
+
+nltk.download('stopwords')
 
 ##### Define unwanted/stop words
 
